@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@font-face {
+  font-family: "encodeRegular";
+  src: url("./assets/font/EncodeSansCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "encodeBold";
+  src: url("./assets/font/EncodeSansCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: "encodeSemiBold";
+  src: url("./assets/font/EncodeSansCondensed-SemiBold.ttf");
+}
+@font-face {
+  font-family: "encodeExtraBold";
+  src: url("./assets/font/EncodeSansCondensed-ExtraBold.ttf");
+}
+
+.font-Regular {
+  font-family: "encodeRegular";
+}
+.font-semibold {
+  font-family: "encodeSemiBold";
+}
+.font-firaBold {
+  font-family: "encodeBold";
+}
+.margin-top {
+  margin-top: 60px;
+}
