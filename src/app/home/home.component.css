@@ -58,3 +58,202 @@ a.button1:hover {
   }
 }
 /* end carousel */
+
+/* image gallery */
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+/* card fade in fxs */
+.card {
+  border-style: 0;
+  text-align: center;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+/* .content-fx:hover {
+  border: #006fff 0.2em solid;
+} */
+.card.card-1.fade-in {
+  animation: fadeIn 1s ease 50ms 1 normal forwards;
+}
+
+.card.card-2.fade-in {
+  animation: fadeIn 1.5s ease 100ms 1 normal forwards;
+}
+
+.card.card-3.fade-in {
+  animation: fadeIn 2s ease 150ms 1 normal forwards;
+}
+.card.card-4.fade-in {
+  animation: fadeIn 2.5s ease 200ms 1 normal forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* image hover overlay fx  for portait image*/
+.content-fx {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content-fx .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 16%;
+  width: 100%;
+  left: 0;
+  top: 80%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content-fx :hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content-fx :hover .content-details {
+  top: 90%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 90%;
+}
+
+/** this is for landscape image */
+.content-fx-ls {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content-fx-ls .content-overlay-ls {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content-fx-ls :hover .content-overlay-ls {
+  opacity: 1;
+}
+
+.content-image-ls {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.content-details-ls {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 90%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content-fx-ls :hover .content-details-ls {
+  top: 70%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details-ls h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details-ls p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom-ls {
+  top: 80%;
+}
+/* end image gallery */
+
+/* aboutus section */
+.myColor {
+  background-image: url("../../assets/img/myColor.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.thisFadeIn {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.thisFadeIn.fade-in {
+  animation: fadeIn 1s ease 50ms 1 normal forwards;
+}

@@ -24,8 +24,11 @@
 .font-semibold {
   font-family: "encodeSemiBold";
 }
-.font-firaBold {
+.font-bold {
   font-family: "encodeBold";
+}
+.font-extrabold {
+  font-family: "encodeExtraBold";
 }
 .margin-top {
   margin-top: 60px;
