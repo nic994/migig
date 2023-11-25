@@ -6,6 +6,9 @@
 .nav-link {
   position: relative;
 }
+.bg-color {
+  background-color: #1b1b1b;
+}
 
 .nav-link::after {
   opacity: 0;
